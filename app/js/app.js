@@ -1,4 +1,4 @@
-// app.js — bootstrap and view routing for the Leonida Ledger.
+// app.js — bootstrap and view routing for the Mangrove Compass.
 //
 // Loads the trophy data, wires the tracker, filters, spoiler toggle and
 // export/import, and routes by hash: #trophy-<id> opens a guide,
@@ -131,7 +131,7 @@ function wireEvents() {
       saveEarned(state.earned);
       refreshAll();
     } catch (_err) {
-      window.alert('That file could not be imported — it holds no Leonida Ledger progress.');
+      window.alert('That file could not be imported — it holds no Mangrove Compass progress.');
     }
     importFile.value = '';
   });

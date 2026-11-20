@@ -1,4 +1,4 @@
-// Leonida Ledger — hand-in program (Node 22, standard library only).
+// Mangrove Compass — hand-in program (Node 22, standard library only).
 //
 // The guide itself is the static files under app/: a tracker and cited
 // walkthrough for all 55 Grand Theft Auto VI trophies, served from

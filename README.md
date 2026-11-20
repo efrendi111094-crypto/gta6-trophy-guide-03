@@ -1,4 +1,4 @@
-# Leonida Ledger: all 55 GTA VI trophies with 180 cited steps from 8 sources, a platinum roadmap and a missable watch
+# Mangrove Compass: all 55 GTA VI trophies with 180 cited steps from 8 sources, a platinum roadmap and a missable watch
 
 [![make.fun](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
 [![rank](https://make.fun/badge/gta6-trophy-guide-01/efrendi111094-crypto/gta6-trophy-guide-03/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01)

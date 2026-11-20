@@ -1,8 +1,8 @@
 // storage.js — saved progress in localStorage, plus JSON export and import.
 // Nothing leaves the browser except a file the reader asks for.
 
-const EARNED_KEY = 'leonida-ledger-earned-v3';
-const SPOILER_KEY = 'leonida-ledger-spoilers-v3';
+const EARNED_KEY = 'mangrove-compass-earned-v3';
+const SPOILER_KEY = 'mangrove-compass-spoilers-v3';
 
 export function loadEarned() {
   try {
@@ -42,7 +42,7 @@ export function saveSpoilersOn(on) {
 
 export function exportProgress(earned) {
   const payload = {
-    app: 'Leonida Ledger',
+    app: 'Mangrove Compass',
     version: 3,
     exportedAt: new Date().toISOString(),
     earned: Array.from(earned).sort((a, b) => a - b),
@@ -51,7 +51,7 @@ export function exportProgress(earned) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'leonida-ledger-progress.json';
+  link.download = 'mangrove-compass-progress.json';
   document.body.appendChild(link);
   link.click();
   link.remove();
