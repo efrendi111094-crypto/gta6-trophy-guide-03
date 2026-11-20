@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <h1>LEONIDA LEDGER</h1>
+    <p class="tagline">The GTA VI trophy guide &amp; tracker — all 55 trophies, every guide cited, nothing missed.</p>
+  </div>
+  <div class="progress-block">
+    <div class="progress-line"><span id="progressText">0 / 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+  <nav class="views" aria-label="Views">
+    <button class="view-tab active" data-view="tracker">Tracker</button>
+    <button class="view-tab" data-view="roadmap">Roadmap</button>
+    <button class="view-tab" data-view="sources">Sources</button>
+    <button class="view-tab" data-view="missable">Missable Watch</button>
+  </nav>
+</header>
+
+<section class="audit" id="auditStrip" aria-label="Audit counts"></section>
+
+<section class="toolbar">
+  <input id="searchBox" type="search" placeholder="Search trophies by name…" aria-label="Search trophies">
+  <div class="filters" id="filterChips" role="group" aria-label="Filter by kind"></div>
+  <label class="spoiler-toggle"><input type="checkbox" id="spoilerToggle" checked> Spoilers hidden</label>
+  <div class="io-buttons">
+    <button id="exportBtn" type="button">Export JSON</button>
+    <button id="importBtn" type="button">Import JSON</button>
+    <input type="file" id="importFile" accept=".json,application/json" hidden>
+  </div>
+</section>
+
+<main>
+  <section id="view-tracker" class="view active">
+    <div class="tracker-grid">
+      <div class="list-pane">
+        <p class="list-count" id="listCount"></p>
+        <ul class="trophy-list" id="trophyList"></ul>
+      </div>
+      <aside class="guide-pane" id="guidePane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view">
+    <h2>Platinum Roadmap — all 55 trophies, in the order to earn them</h2>
+    <p class="view-intro">Six stages, built from the official descriptions: story first, then side strands, collectibles and activities, then combat and clean-up. The only deadline in the whole road is the Chapter 1 meditation spot.</p>
+    <div id="roadmapStages"></div>
+  </section>
+  <section id="view-sources" class="view">
+    <h2>Source Matrix — every trophy, mapped to its sources</h2>
+    <p class="view-intro">Eight dated sources back this guide. Official facts cite Exophase and PSNProfiles (18 Nov 2026); how-to steps cite GTABase, PowerPyx and Output Lag; the missable warning cites CryptoGames and EGamers; cross-checks cite Planet GTA 6.</p>
+    <div id="disputeList"></div>
+    <h2 class="subhead">The matrix — all 55 trophies</h2>
+    <div id="sourceMatrix"></div>
+  </section>
+  <section id="view-missable" class="view">
+    <h2>Missable Watch — one trophy to guard</h2>
+    <p class="view-intro">Across all 55 trophies, exactly one can be missed. Everything else can be earned after the story, at your own pace.</p>
+    <div id="missableWatch"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger — an unofficial fan guide. Names, descriptions and grades are PlayStation's official list as published by Exophase and PSNProfiles, 18 Nov 2026. All guide text is written fresh for this entry; sources are cited, never copied. No Rockstar artwork is used. Progress saves in this browser only.</p>
+</footer>
+</body>
+</html>
